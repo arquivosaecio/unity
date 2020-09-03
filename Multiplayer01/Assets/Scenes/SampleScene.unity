@@ -3007,6 +3007,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079328647}
   m_CullTransparentMesh: 0
+--- !u!1 &2141647183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2141647185}
+  - component: {fileID: 2141647184}
+  m_Layer: 0
+  m_Name: MANAGER
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2141647184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141647183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 415ff35be245646d9af4f5a469d33be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  painelL: {fileID: 1285344599}
+  painelS: {fileID: 2079328647}
+  nomeJogador: {fileID: 1496108475}
+  nomeSala: {fileID: 1865470966}
+  jogador:
+  - {fileID: 5246430208899994391, guid: c972a883e0a8e4c94b98344687efb37e, type: 3}
+  - {fileID: 8562729858226177918, guid: 76ed39b5e2b4d445c808eb30afc74216, type: 3}
+  - {fileID: 9213973158530165202, guid: 80e08a07d2b8e4e2e8d70c0df915a56d, type: 3}
+  id: 0
+  txtNick: {fileID: 1978162066}
+--- !u!4 &2141647185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141647183}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6569777, y: 1.0348201, z: 7.021078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6941877007619818409
 PrefabInstance:
   m_ObjectHideFlags: 0
