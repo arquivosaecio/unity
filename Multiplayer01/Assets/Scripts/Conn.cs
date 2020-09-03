@@ -13,16 +13,28 @@ public class Conn : MonoBehaviourPunCallbacks
     private InputField nomeJogador, nomeSala;
 
     [SerializeField]
-    private GameObject[] jogador;
+    public GameObject[] jogador;
     [SerializeField]
-    private int id;
+    public int id;
 
-    [SerializeField]
-    private Text txtNick;
+    //[SerializeField]
+    //private Text txtNick;
 
     // Start is called before the first frame update
-    void Start(){
 
+    public static Conn instance; // Fazendo a minha classe Conn.cs ficar vísivel a todas as fases do jogo
+
+    void Awake() {
+        if(instance == null){ // instância não foi inicializada? "o arquivo está oculto?"
+            instance = this; // torne o arquivo visível
+            DontDestroyOnLoad(this.gameObject); // manter a classe viva por toda a execução do jogo
+        }else{
+            Destroy(gameObject); // destruir as outras, não a minha
+        }
+    }
+
+    void Start(){
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     public void Login(){
@@ -67,11 +79,14 @@ public class Conn : MonoBehaviourPunCallbacks
         print(PhotonNetwork.CurrentRoom.Name);
         print(PhotonNetwork.CurrentRoom.PlayerCount);
         print(PhotonNetwork.NickName);
-        txtNick.text = PhotonNetwork.NickName;
-        painelS.SetActive(false);
+        //txtNick.text = PhotonNetwork.NickName;
+        //painelS.SetActive(false); // ocultar e descocultar paineis...
         // String nome , coordenadas criação objeto, ângulos criação objeto, grupo = 0
         //PhotonNetwork.Instantiate(jogador.name , new Vector3(0 , Random.Range(1,8) , 0) , Quaternion.Euler(45,45,45) , 0);
-        PhotonNetwork.Instantiate(jogador[id].name , new Vector3(Random.Range(1,8) , 2 , Random.Range(1,8) ) , Quaternion.identity , 0);
+        //PhotonNetwork.Instantiate(jogador[id].name , new Vector3(Random.Range(1,8) , 2 , Random.Range(1,8) ) , Quaternion.identity , 0);
+        if(PhotonNetwork.IsMasterClient){
+            PhotonNetwork.LoadLevel(1);
+        }
     }
 
     public void SetID(int Id){

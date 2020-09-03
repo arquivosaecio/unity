@@ -1086,7 +1086,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1159,28 +1158,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 415ff35be245646d9af4f5a469d33be0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  painelL: {fileID: 1285344599}
-  painelS: {fileID: 2079328647}
-  nomeJogador: {fileID: 1496108475}
-  nomeSala: {fileID: 1865470966}
-  jogador:
-  - {fileID: 5246430208899994391, guid: c972a883e0a8e4c94b98344687efb37e, type: 3}
-  - {fileID: 8562729858226177918, guid: 76ed39b5e2b4d445c808eb30afc74216, type: 3}
-  - {fileID: 9213973158530165202, guid: 80e08a07d2b8e4e2e8d70c0df915a56d, type: 3}
-  id: 0
-  txtNick: {fileID: 1978162066}
 --- !u!1 &1140924883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 2141647184}
         m_MethodName: SetID
         m_Mode: 3
         m_Arguments:
@@ -1642,7 +1619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 2141647184}
         m_MethodName: SetID
         m_Mode: 3
         m_Arguments:
@@ -1865,7 +1842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 2141647184}
         m_MethodName: CriaSala
         m_Mode: 1
         m_Arguments:
@@ -2528,7 +2505,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 2141647184}
         m_MethodName: SetID
         m_Mode: 3
         m_Arguments:
@@ -2884,7 +2861,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 963194229}
+      - m_Target: {fileID: 2141647184}
         m_MethodName: Login
         m_Mode: 1
         m_Arguments:
