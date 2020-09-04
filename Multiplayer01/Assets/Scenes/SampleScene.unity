@@ -3018,7 +3018,7 @@ MonoBehaviour:
   nomeJogador: {fileID: 1496108475}
   nomeSala: {fileID: 1865470966}
   jogador:
-  - {fileID: 5246430208899994391, guid: c972a883e0a8e4c94b98344687efb37e, type: 3}
+  - {fileID: 7282237770746082983, guid: c972a883e0a8e4c94b98344687efb37e, type: 3}
   - {fileID: 8562729858226177918, guid: 76ed39b5e2b4d445c808eb30afc74216, type: 3}
   - {fileID: 9213973158530165202, guid: 80e08a07d2b8e4e2e8d70c0df915a56d, type: 3}
   id: 0

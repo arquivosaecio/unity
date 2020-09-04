@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2114461982608601469}
   - component: {fileID: 2114461982608601466}
+  - component: {fileID: 8086857193908452884}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -50,8 +51,10 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 1358034617901589737, guid: c972a883e0a8e4c94b98344687efb37e,
+    type: 3}
+  m_Follow: {fileID: 1358034617901589737, guid: c972a883e0a8e4c94b98344687efb37e,
+    type: 3}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
@@ -67,6 +70,18 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2114461983024129479}
+--- !u!114 &8086857193908452884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114461982608601467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b03b325e56bb4d609c64c7934174c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2114461983024129476
 GameObject:
   m_ObjectHideFlags: 0

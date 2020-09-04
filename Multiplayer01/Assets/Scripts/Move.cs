@@ -31,6 +31,7 @@ public class Move : MonoBehaviour
     }
 
     // Update is called once per frame
+    float t = 0;
     void Update()
     {
         if(pv.IsMine){
@@ -46,9 +47,10 @@ public class Move : MonoBehaviour
             if(Input.GetKey(KeyCode.RightArrow)){
                 transform.Rotate(new Vector3(0 , 20 * Time.deltaTime, 0 ));
             }
-            if(Input.GetKey(KeyCode.Space)){
+            t += Time.deltaTime;
+            if(Input.GetKeyDown(KeyCode.Space) && t >= 0.5f){
                 Tiros();
-                //pv.RPC("Tiros",RpcTarget.All);
+                t = 0;
             }
             nome.color = Color.red;
         }
