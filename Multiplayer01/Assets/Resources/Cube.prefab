@@ -344,6 +344,7 @@ GameObject:
   - component: {fileID: 2137956326688031296}
   - component: {fileID: 2397257535605948193}
   - component: {fileID: 4998529791544249013}
+  - component: {fileID: 2860243560640072843}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -517,6 +518,20 @@ MonoBehaviour:
   bala: {fileID: 950528768196566548, guid: 08c6a0462d03a44f888c4ed26efc8de9, type: 3}
   posTiro: {fileID: 9067840325192773125}
   barraVida: {fileID: 1811501753083220365}
+--- !u!114 &2860243560640072843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5246430208899994391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084a68aa286c04e7b9cc558f84c39ba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vCam: {fileID: 0}
+  camera: {fileID: 0}
 --- !u!1 &9067840325192773125
 GameObject:
   m_ObjectHideFlags: 0

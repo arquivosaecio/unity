@@ -3022,7 +3022,6 @@ MonoBehaviour:
   - {fileID: 8562729858226177918, guid: 76ed39b5e2b4d445c808eb30afc74216, type: 3}
   - {fileID: 9213973158530165202, guid: 80e08a07d2b8e4e2e8d70c0df915a56d, type: 3}
   id: 0
-  txtNick: {fileID: 1978162066}
 --- !u!4 &2141647185
 Transform:
   m_ObjectHideFlags: 0

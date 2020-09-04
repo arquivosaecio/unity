@@ -19,11 +19,15 @@ public class Move : MonoBehaviour
     private GameObject posTiro;
     [SerializeField]
     private Image barraVida;
+    public static Transform alvo;
     // Start is called before the first frame update
     void Start()
     {
         pv = GetComponent<PhotonView>();
         nome.text = pv.Owner.NickName;
+        if(pv.IsMine){
+            alvo = transform;
+        }
     }
 
     // Update is called once per frame
